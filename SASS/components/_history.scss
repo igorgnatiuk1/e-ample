@@ -1,0 +1,22 @@
+.history{
+    padding: 60px 0;
+
+background: linear-gradient(315deg, rgba(242, 70, 27, 0.13) 12%, rgb(28, 44, 58) 96%);
+// background: red;
+// background: linear-gradient(315deg,rgba(51, 79, 107, 1) 96%, rgba(242, 70, 27, 0.13) 12%)
+
+}
+.history__title {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+.history__text {
+  &:nth-child(2),
+  &:nth-child(3) {
+    width: 720px;
+  }
+}
+.history__text:not(:last-child) {
+  margin-bottom: 15px;
+}

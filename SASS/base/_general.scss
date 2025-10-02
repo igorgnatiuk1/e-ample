@@ -1,0 +1,43 @@
+body {
+  background-color: #000000;
+}
+.logo {
+  color: $colorGreen;
+  font-weight: 800;
+  font-size: 40px;
+}
+.title {
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 1;
+  color: $colorWhite;
+}
+.title__span {
+  color: $colorGreen;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  fill: $colorGreen;
+}
+.button {
+  background-color: rgb(240, 46, 110);
+  border-radius: 10px;
+  color: $colorWhite;
+  padding: 10px 15px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

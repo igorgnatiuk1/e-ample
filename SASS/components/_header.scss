@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  height: 60px;
+  padding: 10px 10px;
+  border-bottom: 1px solid $colorBorder;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+}
+.header__item:not(:last-child) {
+  margin-right: 15px;
+}
+.header__logo {
+  font-weight: 800;
+  font-size: 15px;
+}
