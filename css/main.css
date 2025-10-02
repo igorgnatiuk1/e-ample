@@ -84,9 +84,20 @@ body {
   background-color: rgb(240, 46, 110);
   border-radius: 10px;
   color: rgb(255, 255, 255);
-  padding: 10px 15px;
-  font-size: 13px;
+  padding: 5px;
+  font-size: 10px;
   font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .button {
+    padding: 8px 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
 }
 
 .visually-hidden {
@@ -137,7 +148,7 @@ body {
   max-width: 1500px;
   margin: 0 auto;
   height: 60px;
-  padding: 10px 10px;
+  padding: 10px 25px;
   border-bottom: 1px solid #2a2a2a;
 }
 
@@ -155,8 +166,14 @@ body {
 }
 
 .header__logo {
-  font-weight: 800;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 13px;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    font-weight: 800;
+    font-size: 15px;
+  }
 }
 
 .hero .container {
@@ -214,7 +231,7 @@ body {
 }
 
 .hero {
-  background-image: url(../images/hero.jpeg);
+  background-image: url(../../images/hero.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -262,7 +279,12 @@ body {
 }
 
 .schedule {
-  padding: 60px 0;
+  padding: 40px 0;
+}
+@media screen and (min-width: 1200px) {
+  .schedule {
+    padding: 60px 0;
+  }
 }
 
 .table {
@@ -277,10 +299,23 @@ body {
 }
 
 .table caption {
-  padding: 15px;
+  padding: 10px;
   text-align: left;
-  font-size: 20px;
-  font-weight: 800;
+  font-size: 15px;
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .table caption {
+    padding: 10px;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .table caption {
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 800;
+  }
 }
 
 .table td {
@@ -297,7 +332,17 @@ body {
 }
 
 .table th {
-  padding: 15px;
+  padding: 8px;
+}
+@media screen and (min-width: 768px) {
+  .table th {
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .table th {
+    padding: 15px;
+  }
 }
 
 .table caption,
@@ -313,14 +358,42 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .participants__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 .participants__item {
   border: 2px solid #2a2a2a;
   border-radius: 15px;
   overflow: hidden;
+  width: 319px;
+}
+.participants__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .participants__item {
+    width: 204px;
+  }
+  .participants__item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .participants__item {
+    width: 304px;
+  }
 }
 
 .participants__title {
@@ -331,13 +404,38 @@ body {
 }
 
 .participants__img {
-  height: 223px;
-  width: 300px;
+  height: 220px;
+  width: 315px;
+}
+@media screen and (min-width: 768px) {
+  .participants__img {
+    height: 150px;
+    width: 200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .participants__img {
+    height: 223px;
+    width: 300px;
+  }
 }
 
 .participants__text {
-  padding: 10px;
+  font-size: 15px;
+  padding: 15px;
   background-color: rgb(37, 37, 48);
+}
+@media screen and (min-width: 768px) {
+  .participants__text {
+    font-size: 12px;
+    padding: 7px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .participants__text {
+    font-size: 14px;
+    padding: 10px;
+  }
 }
 
 .history {
@@ -349,10 +447,40 @@ body {
   font-size: 30px;
   font-weight: 800;
   margin-bottom: 25px;
+  text-align: center;
 }
 
-.history__text:nth-child(2), .history__text:nth-child(3) {
+.history__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box__text {
   width: 720px;
+  z-index: 2;
+}
+
+.history__box .history__text {
+  margin-bottom: 15px;
+}
+
+.history__img {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .history__img {
+    display: block;
+    margin-left: -13px;
+    width: 327px;
+    height: 160px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .history__img {
+    width: 465px;
+    height: 175px;
+  }
 }
 
 .history__text:not(:last-child) {
@@ -469,20 +597,88 @@ textarea:placeholder-shown {
   border-radius: 8px;
 }
 
-.footer {
-  padding: 30px 0;
-  border-top: 1px solid #2a2a2a;
+.history {
+  padding: 60px 0;
+  background: linear-gradient(315deg, rgba(242, 70, 27, 0.13) 12%, rgb(28, 44, 58) 96%);
 }
 
-.footer__box {
+.history__title {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.history__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+.box__text {
+  width: 720px;
+  z-index: 2;
+}
+
+.history__box .history__text {
+  margin-bottom: 15px;
+}
+
+.history__img {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .history__img {
+    display: block;
+    margin-left: -13px;
+    width: 327px;
+    height: 160px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .history__img {
+    width: 465px;
+    height: 175px;
+  }
+}
+
+.history__text:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.footer {
+  padding: 20px 0;
+  border-top: 1px solid #2a2a2a;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 20px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding: 30px 0;
+  }
+}
+
+.footer__box {
   color: #d9d9d9;
-  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .footer__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__box {
+    margin-bottom: 30px;
+  }
 }
 
 .footer__list {
