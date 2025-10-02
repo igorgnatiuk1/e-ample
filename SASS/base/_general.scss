@@ -25,9 +25,18 @@ body {
   background-color: rgb(240, 46, 110);
   border-radius: 10px;
   color: $colorWhite;
-  padding: 10px 15px;
-  font-size: 13px;
+  padding: 5px;
+  font-size: 10px;
   font-weight: 600;
+  @media screen and (min-width: 768px) {
+    padding: 8px 10px;
+  
+}
+@media screen and (min-width: 1200px) {
+   padding: 10px 15px;
+  font-size: 13px;
+}
+
 }
 .visually-hidden {
   position: absolute;

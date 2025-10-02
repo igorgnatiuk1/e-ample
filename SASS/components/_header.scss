@@ -5,7 +5,7 @@
   max-width: 1500px;
   margin: 0 auto;
   height: 60px;
-  padding: 10px 10px;
+  padding: 10px 25px;
   border-bottom: 1px solid $colorBorder;
 }
 .header__list {
@@ -16,6 +16,10 @@
   margin-right: 15px;
 }
 .header__logo {
-  font-weight: 800;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 13px;
+  @media screen and (min-width: 768px) {
+    font-weight: 800;
+    font-size: 15px;
+  }
 }
