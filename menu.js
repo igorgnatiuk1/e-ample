@@ -1,6 +1,15 @@
 (() => {
     const menuBtnRef = document.querySelector("[data-menu-button]");
     const mobileMenuRef = document.querySelector("[data-menu]");
+    const mobileLink = document.querySelectorAll("[mobileFix]");
+
+[...mobileLink].map(elem=>elem.addEventListener("click", ()=>{
+  mobileMenuRef.classList.remove("is-open");
+  menuBtnRef.classList.remove("is-open");
+}))
+// mobileLink.addEventListener('click', )
+
+
   
     menuBtnRef.addEventListener("click", () => {
       // const expanded =
