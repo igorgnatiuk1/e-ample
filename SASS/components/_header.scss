@@ -64,15 +64,15 @@
   fill: black;
 }
 .mobile {
-  position: fixed;
+  position: absolute;
   top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  right: 0;
+  width: 300px;
+  height: 400px;
   background-color: white;
   transform: translateX(100%);
   transition: transform 200ms linear;
-  padding: 48px 40px;
+  padding: 20px 25px;
   z-index: 1;
 }
 
@@ -83,10 +83,11 @@
 }
 
 .mobile__list {
-  font-family: Roboto;
-  font-size: 40px;
+  
+  font-size: 30px;
   font-weight: 500;
   line-height: 1.8;
+  margin-bottom: 35px;
 }
 
 .mobile__box {
@@ -98,12 +99,12 @@
 
 .mobile__adress--tel {
   display: block;
-  font-family: Roboto;
-  font-size: 34px;
+ 
+  font-size: 25px;
   font-weight: 500;
   line-height: 1.15;
   font-style: normal;
-  margin-bottom: 32px;
+  margin-bottom: 15px;
   transition: color 200ms linear;
   &:hover,
   &:focus {
@@ -114,14 +115,11 @@
 .mobile__item {
   color: black;
   transition: color 200ms linear;
-  &:hover,
-  &:focus {
-    color: red;
-  }
+ 
 }
 
 .mobile__adress--mail {
-  font-family: Roboto;
+ 
   font-size: 24px;
   font-weight: 500;
   line-height: 1.17;
@@ -130,7 +128,6 @@
 
 .mobile__adress {
   color: black;
-  margin-bottom: 64px;
 }
 
 .mobile__network {
@@ -147,11 +144,7 @@
   border: 1px solid black;
   border-radius: 4px;
   transition: color 200ms linear, border 200ms linear;
-  &:hover,
-  &:focus {
-    color: red;
-    border: 1px solid red;
-  }
+
 }
 .mobile__link {
   padding: 5px;
@@ -159,10 +152,11 @@
 
 .mobile__network--link {
   display: block;
-  padding: 5px;
-  font-family: Roboto;
+  // padding: 5px;
+ 
   font-size: 18px;
   font-weight: 500;
   line-height: 1.22;
-  padding: 10px;
+  // padding: 10px;
+  // margin-bottom: 50px;
 }
