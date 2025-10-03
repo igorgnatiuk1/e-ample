@@ -96,6 +96,10 @@ body {
   background-color: #000000;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .logo {
   color: rgb(53, 198, 107);
   font-weight: 800;

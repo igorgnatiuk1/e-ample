@@ -1,6 +1,9 @@
 body {
   background-color: #000000;
 }
+html{
+  scroll-behavior: smooth;
+}
 .logo {
   color: $colorGreen;
   font-weight: 800;

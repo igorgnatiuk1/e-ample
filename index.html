@@ -16,47 +16,47 @@
         <a href="#" class="header__logo">G&G</a>
         <ul class="header__list">
             <li class="header__item">
-                <a href="#" class="header__link">Про гурт</a>
+                <a href="#history" class="header__link">Про гурт</a>
             </li>
             <li class="header__item">
-                <a href="#" class="header__link">Концерти</a>
+                <a href="#concerts" class="header__link">Концерти</a>
             </li>
             <li class="header__item">
-                <a href="#" class="header__link">Галерея</a>
+                <a href="#team" class="header__link">Галерея</a>
             </li>
             <li class="header__item">
-                <a href="#" class="header__link">Контакти</a>
+                <a href="#contacts" class="header__link">Контакти</a>
             </li>
 
         </ul>
-          <button class="header-open" data-menu-button>
-          <svg width="24px" height="16px" class="button__svg">
-            <use href="./images/sprite.svg#icon-menu" class="open"></use>
-            <use href="./images/sprite.svg#icon-cross" class="close"></use>
-          </svg>
+        <button class="header-open" data-menu-button>
+            <svg width="24px" height="16px" class="button__svg">
+                <use href="./images/sprite.svg#icon-menu" class="open"></use>
+                <use href="./images/sprite.svg#icon-cross" class="close"></use>
+            </svg>
         </button>
         <div class="mobile" data-menu>
-          <ul class="mobile__list">
-               <li class="mobile__item">
-                <a href="#" class="mobile__link">Про гурт</a>
-            </li>
-            <li class="mobile__item">
-                <a href="#" class="mobile__link">Концерти</a>
-            </li>
-            <li class="mobile__item">
-                <a href="#" class="mobile__link">Галерея</a>
-            </li>
-            <li class="mobile__item">
-                <a href="#" class="mobile__link">Контакти</a>
-            </li>
-          </ul>
-          <address class="mobile__adress">
-            <a href="#" class="mobile__adress--tel"> +38 096 111 11 11 </a>
-            <a href="#" class="mobile__adress--mail"> info@devstudio.com </a>
-          </address>
-          <div class="mobile__box">
-        
-          </div>
+            <ul class="mobile__list">
+                <li class="mobile__item">
+                    <a href="#history" class="mobile__link">Про гурт</a>
+                </li>
+                <li class="mobile__item">
+                    <a href="#concerts" class="mobile__link">Концерти</a>
+                </li>
+                <li class="mobile__item">
+                    <a href="#team" class="mobile__link">Галерея</a>
+                </li>
+                <li class="mobile__item">
+                    <a href="#contacts" class="mobile__link">Контакти</a>
+                </li>
+            </ul>
+            <address class="mobile__adress">
+                <a href="#" class="mobile__adress--tel"> +38 096 111 11 11 </a>
+                <a href="#" class="mobile__adress--mail"> info@devstudio.com </a>
+            </address>
+            <div class="mobile__box">
+
+            </div>
     </header>
     <main>
         <section class="hero">
@@ -71,13 +71,13 @@
                     <p class="hero__text"><span class="accent">Наші концерти</span> — це завжди контакт з залом, драйв і
                         емоції.
                         Приєднуйся до нас на найближчих виступах і відчуй цей саунд наживо!</p>
-                    <button type="button" class="hero__button">ЗАКАЗАТИ КВИТОК</button>
+                    <button type="button" class="hero__button" data-modal-open>ЗАКАЗАТИ КВИТОК</button>
 
                 </div>
             </div>
 
         </section>
-        <section class="schedule">
+        <section class="schedule" id="concerts">
             <div class="container">
                 <h2 class="visually-hidden">Розклад</h2>
                 <div class="table__box">
@@ -99,32 +99,39 @@
                                 <td>Київ - Docker-G Pub</td>
                                 <td>250</td>
                                 <td>25.10.2025, 19:00</td>
-                                <td> <button class="button">Замовити квиток</button></td>
+                                <td> <button class="button" data-modal-open>Замовити квиток</button></td>
                             </tr>
                             <tr>
                                 <td>Львів - !FESTrepublic</td>
                                 <td>400</td>
                                 <td>01.11.2025, 20:00</td>
-                                <td> <button class="button">Замовити квиток</button></td>
+                                <td> <button class="button" data-modal-open>Замовити квиток</button></td>
                             </tr>
                             <tr>
                                 <td>Одеса - Зелен театр</td>
                                 <td>700</td>
                                 <td>09.11.2025, 19:30</td>
-                                <td> <button class="button">Замовити квиток</button></td>
+                                <td> <button class="button" data-modal-open>Замовити квиток</button></td>
                             </tr>
                             <tr>
                                 <td>Харків - ArtZavod</td>
                                 <td>500</td>
                                 <td>16.11.2025, 19:00</td>
-                                <td> <button class="button">Замовити квиток</button></td>
+                                <td> <button class="button" data-modal-open>Замовити квиток</button></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+                <div class="backdrop" data-modal>
+                    <div class="modal">
+                        <div>ITS ME</div>
+                        <button class="modal__close" data-modal-close>X</button>
+
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="participants">
+        <section class="participants" id="team">
             <div class="container">
                 <h2 class="participants__title">Учасники гурту</h2>
                 <ul class="participants__list">
@@ -143,24 +150,30 @@
                 </ul>
             </div>
         </section>
-        <section class="history">
+        <section class="history" id="history">
             <h2 class="history__title">Наша історія</h2>
             <div class="container">
                 <div class="history__box">
-                   <div class="box__text">
-                     <p class="history__text">«Грим та Грім» народився з бажання створювати музику, яка відчувається серцем.
-                    Ми
-                    почали свій шлях у маленькій студії в центрі Києва, де кожен акорд, кожне слово було наповнене
-                    емоціями
-                    та переживаннями. Це було місце, де народжувались наші перші пісні, де ми вчились грати разом як
-                    єдиний
-                    організм.</p>
-                <p class="history__text">За роки нашої діяльності ми виступили на десятках сцен, від невеликих клубів до
-                    великих фестивалів. Наша музика — це поєднання традиційного року з сучасними елементами, що робить
-                    її
-                    унікальною та впізнаваною. Ми не боїмось експериментувати з звуком, додаючи електронні елементи або
-                    народні інструменти.</p>
-                   </div>
+                    <div class="box__text">
+                        <p class="history__text">«Грим та Грім» народився з бажання створювати музику, яка відчувається
+                            серцем.
+                            Ми
+                            почали свій шлях у маленькій студії в центрі Києва, де кожен акорд, кожне слово було
+                            наповнене
+                            емоціями
+                            та переживаннями. Це було місце, де народжувались наші перші пісні, де ми вчились грати
+                            разом як
+                            єдиний
+                            організм.</p>
+                        <p class="history__text">За роки нашої діяльності ми виступили на десятках сцен, від невеликих
+                            клубів до
+                            великих фестивалів. Наша музика — це поєднання традиційного року з сучасними елементами, що
+                            робить
+                            її
+                            унікальною та впізнаваною. Ми не боїмось експериментувати з звуком, додаючи електронні
+                            елементи або
+                            народні інструменти.</p>
+                    </div>
                     <img src="./images/photo2_cleanup.png" alt="" class="history__img">
                 </div>
                 <p class="history__text">Кожен наш виступ - це не просто концерт, а справжня подія, де ми ділимося своєю
@@ -173,7 +186,7 @@
                     Тарас тримає ритм, який змушує серця битися в унісон з музикою.</p>
             </div>
         </section>
-        <section class="connection">
+        <section class="connection" id="contacts">
             <div class="container">
                 <h2 class="connection__title">
                     Зв'яжись з нами
@@ -216,6 +229,7 @@
         </div>
     </footer>
     <script src="./menu.js"></script>
+    <script src="./popUp.js"></script>
 </body>
 
 </html>
