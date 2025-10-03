@@ -192,7 +192,6 @@ html {
   margin: 0 auto;
   height: 60px;
   padding: 10px 25px;
-  border-bottom: 1px solid red;
 }
 
 .header__list {
@@ -213,6 +212,10 @@ html {
   margin-right: 15px;
 }
 
+.header__item:hover, .header__item:focus {
+  color: rgb(240, 46, 110);
+}
+
 .header__logo {
   font-weight: 600;
   font-size: 13px;
@@ -222,6 +225,9 @@ html {
     font-weight: 800;
     font-size: 15px;
   }
+}
+.header__logo:hover, .header__logo:focus {
+  color: rgb(240, 46, 110);
 }
 
 .header__link {
@@ -318,9 +324,6 @@ html {
   -webkit-transition: color 200ms linear;
   transition: color 200ms linear;
 }
-.mobile__adress--tel:hover, .mobile__adress--tel:focus {
-  color: red;
-}
 
 .mobile__item {
   color: black;
@@ -359,10 +362,6 @@ html {
   border-radius: 4px;
   -webkit-transition: color 200ms linear, border 200ms linear;
   transition: color 200ms linear, border 200ms linear;
-}
-.mobile__network--item:hover, .mobile__network--item:focus {
-  color: red;
-  border: 1px solid red;
 }
 
 .mobile__link {
@@ -435,6 +434,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  border-top: 1px solid #2a2a2a;
 }
 
 .accent {
