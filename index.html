@@ -44,10 +44,10 @@
                     <a href="#concerts" class="mobile__link" mobileFix>Концерти</a>
                 </li>
                 <li class="mobile__item">
-                    <a href="#team" class="mobile__link" mobileFix >Галерея</a>
+                    <a href="#team" class="mobile__link" mobileFix>Галерея</a>
                 </li>
                 <li class="mobile__item">
-                    <a href="#contacts" class="mobile__link" mobileFix >Контакти</a>
+                    <a href="#contacts" class="mobile__link" mobileFix>Контакти</a>
                 </li>
             </ul>
             <address class="mobile__adress">
@@ -72,9 +72,36 @@
                         емоції.
                         Приєднуйся до нас на найближчих виступах і відчуй цей саунд наживо!</p>
                     <button type="button" class="hero__button" data-modal-open>ЗАКАЗАТИ КВИТОК</button>
+                    <div class="backdrop" data-modal>
+                        <div class="modal">
 
+                            <h2 class="modal__title">Обери концерт</h2>
+                            <ul class="modal__list">
+                                <li class="modal__item">Львів - !FESTrepublic, 01.11.2025, 20:00</li>
+                                <li class="modal__item">Киів - Docker-G Pub, 25.10.2025, 19:00</li>
+                                <li class="modal__item">Одеса - Зелений театр, 09.11.2025, 19:30</li>
+                                <li class="modal__item">Харків - ArtZavod, 16.11.2025, 19:00</li>
+                            </ul>
+                            <form class="modal__form">
+                                <label>
+                                    Ім'я
+                                    <input type="text" name="username" class="modal__input">
+                                </label>
+                                <label>
+                                    Email
+                                    <input type="email" name="email" class="modal__input">
+                                </label>
+
+                                <div class="button__box">
+                                    <button type="submit" class="modal__button button">Підтвердити замовлення</button>
+                                <button type="submit" class="modal__button button" data-modal-close>Скасувати</button>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
                 </div>
-            </div>
 
         </section>
         <section class="schedule" id="concerts">
@@ -122,13 +149,8 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="backdrop" data-modal>
-                    <div class="modal">
-                        <div>ITS ME</div>
-                        <button class="modal__close" data-modal-close>X</button>
 
-                    </div>
-                </div>
+            </div>
             </div>
         </section>
         <section class="participants" id="team">
@@ -136,15 +158,15 @@
                 <h2 class="participants__title">Учасники гурту</h2>
                 <ul class="participants__list">
                     <li class="participants__item">
-                        <img src="./images/кролик.jpeg" alt="" class="participants__img">
+                        <img src="./images/кролик.jpg" alt="" loading="lazy" class="participants__img">
                         <p class="participants__text">Максим — гітара</p>
                     </li>
                     <li class="participants__item">
-                        <img src="./images/вовк.jpeg" alt="" class="participants__img">
+                        <img src="./images/вовк.jpg" alt="" loading="lazy" class="participants__img">
                         <p class="participants__text">Олена — вокал</p>
                     </li>
                     <li class="participants__item">
-                        <img src="./images/воїн.jpeg" alt="" class="participants__img">
+                        <img src="./images/воїн.jpg" alt="" loading="lazy" class="participants__img">
                         <p class="participants__text">Тарас — барабани</p>
                     </li>
                 </ul>
@@ -174,7 +196,7 @@
                             елементи або
                             народні інструменти.</p>
                     </div>
-                    <img src="./images/photo2_cleanup.png" alt="" class="history__img">
+                    <img src="./images/сцена.jpg" alt="" loading="lazy" class="history__img">
                 </div>
                 <p class="history__text">Кожен наш виступ - це не просто концерт, а справжня подія, де ми ділимося своєю
                     енергією з глядачами та створюємо неповторну атмосферу. Ми віримо, що музика має силу об'єднувати
